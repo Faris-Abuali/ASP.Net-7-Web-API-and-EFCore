@@ -9,10 +9,10 @@ var builder = WebApplication.CreateBuilder(args);
 //builder.Logging.AddDebug();
 
 // --- SeriLog Logger Package
-Log.Logger = new LoggerConfiguration()
-    .MinimumLevel.Information()
-    .WriteTo.File("Log/log.txt", rollingInterval: RollingInterval.Minute)
-    .CreateLogger();
+//Log.Logger = new LoggerConfiguration()
+//    .MinimumLevel.Information()
+//    .WriteTo.File("Log/log.txt", rollingInterval: RollingInterval.Minute)
+//    .CreateLogger();
 // a log file will be generated every minute :)
 
 //builder.Host.UseSerilog(); // <-- Only SeriLog will work. The built-in loggers will not.
